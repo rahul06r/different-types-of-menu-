@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three menu type</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        position: relative;
+        background: peachpuff;
+        min-height: 90vh;
+        display: grid;
+        place-items: center;
+        list-style: none;
+    }
+    
+    .navbar1,
+    .navbar2,
+    .navbar3 {
+        width: 80%;
+        height: 100px;
+        background: #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #222, -5px -5px 10px #222;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .logo1 {
+        padding: 30px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar1 li {
+        padding: 20px;
+        list-style: none;
+    }
+    
+    .button {
+        background: blue;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .navbar2 li {
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .navbar2 li:nth-child(1) {
+        padding-left: 30px;
+    }
+    
+    .navbar3 li {
+        list-style: none;
+        padding: 20px;
+    }
+    
+    li.active {
+        color: blue;
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <h2>Three diferent types of Menu position examples</h2>
+    <div class="navbar1">
+        <div class="logo1">LOGO</div>
+        <ul>
+            <li class="active">Home</li>
+            <li>Work</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <div class="button">Visit</div>
+        </ul>
+    </div>
+    <div class="navbar2">
+        <ul>
+            <div class="logo1">LOGO</div>
+            <li class="active">Home</li>
+            <li>Work</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <div class="button">Visit</div>
+    </div>
+    <div class="navbar3">
+        <div class="logo1">LOGO</div>
+        <ul>
+            <li class="active">Home</li>
+            <li>Work</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <div class="button">Visit</div>
+    </div>
+
+
+</body>
+
+</html>
